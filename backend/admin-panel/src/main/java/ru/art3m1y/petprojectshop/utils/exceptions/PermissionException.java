@@ -1,4 +1,4 @@
-package ru.art3m1y.petprojectshop.login.utils.exceptions;
+package ru.art3m1y.petprojectshop.utils.exceptions;
 
 public class PermissionException extends RuntimeException {
     public PermissionException() {

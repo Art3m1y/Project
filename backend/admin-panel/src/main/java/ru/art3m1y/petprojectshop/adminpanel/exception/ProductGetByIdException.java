@@ -1,4 +1,4 @@
-package ru.art3m1y.petprojectshop.adminpanel.utils.exception;
+package ru.art3m1y.petprojectshop.adminpanel.exception;
 
 public class ProductGetByIdException extends RuntimeException{
     public ProductGetByIdException() {

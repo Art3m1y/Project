@@ -159,7 +159,9 @@ public class IdentificationController {
     public ResponseEntity<JwtUserInfoDto> checkAccessToken(@RequestParam Optional<String> accessToken) {
         try {
             String presentedAccessToken = accessToken.get();
-            return new ResponseEntity<>(new JwtUserInfoDto(jwtUtil.getEmailFromAccessToken(presentedAccessToken), jwtUtil.getRoleFromAccessToken(presentedAccessToken)), HttpStatus.OK);
+            return new ResponseEntity<>(
+                    new JwtUserInfoDto(jwtUtil.getEmailFromAccessToken(presentedAccessToken)
+                            , jwtUtil.getRoleFromAccessToken(presentedAccessToken)), HttpStatus.OK);
         } catch (JWTVerificationException e) {
             return new ResponseEntity<>(new JwtUserInfoDto(null, null), HttpStatus.OK);
         }
@@ -167,7 +169,9 @@ public class IdentificationController {
 
     @GetMapping("/activate/{activationCode}")
     public ResponseEntity<?> activate(@PathVariable String activationCode) {
-        return registrationService.existsByActivationCode(activationCode) ? successActivate(activationCode) : ResponseEntity.badRequest().build();
+        return registrationService.existsByActivationCode(activationCode) ?
+                successActivate(activationCode) :
+                ResponseEntity.badRequest().build();
     }
 
     @GetMapping("/showuserinfo")
