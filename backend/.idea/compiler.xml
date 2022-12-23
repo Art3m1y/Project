@@ -6,25 +6,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="admin-panel" />
         <module name="api-gateway" />
+        <module name="admin-panel" />
         <module name="product" />
-        <module name="login" />
         <module name="petproject-shop" />
+        <module name="login" />
+        <module name="eureka-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="admin-panel" target="17" />
-      <module name="api-gateway" target="17" />
-      <module name="login" target="17" />
-      <module name="petproject-shop" target="1.5" />
-      <module name="product" target="17" />
-    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="admin-panel" options="-parameters" />
       <module name="api-gateway" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
       <module name="login" options="-parameters" />
       <module name="product" options="-parameters" />
     </option>
