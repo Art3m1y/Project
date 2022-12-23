@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Project.iml" filepath="$PROJECT_DIR$/.idea/Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/admin-panel/admin-panel.iml" filepath="$PROJECT_DIR$/backend/admin-panel/admin-panel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/login/login.iml" filepath="$PROJECT_DIR$/backend/login/login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/petproject-shop.iml" filepath="$PROJECT_DIR$/backend/petproject-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/backend/product/product.iml" filepath="$PROJECT_DIR$/backend/product/product.iml" />
+    </modules>
+  </component>
+</project>
